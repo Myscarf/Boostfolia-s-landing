@@ -1,0 +1,86 @@
+/*Header*/
+
+.menu_bar{
+    margin: auto;
+    background-color: #f8f6f6;
+    width: 100%;
+    max-width: 1366px;
+    height: 143px;
+}
+
+.content{
+    position: relative;
+    margin: 0 180px;
+}
+
+
+
+.logo{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 49px;
+}
+.logo_text{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 25px;
+    font-family: "BigNoodleTitling";
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.burgerMenu {
+    position: absolute;
+    top: 64px;
+    right: 6px;
+}
+
+.dropdown {
+    position: absolute;
+    right: 0;
+    display: none;
+    width: 140px;
+    max-width: 400px;
+    padding: 10px;
+    background-color: #171f23;
+    border: 1px solid var(--textcolor);
+    color: #d6d5d5;
+    text-align: center;
+    z-index: 10011;
+}
+
+.Menu__line {
+    width: 38px;
+    height: 3px;
+    background-color:#554948;
+    margin-bottom: 7px;
+}
+
+.dropdown__item{
+    display: block;
+    margin: 10px;
+}
+
+.dropdown__item:hover{
+    color: var(--textcolor);
+}
+
+.burgerMenu:hover .Menu__line{
+    width: 160px;
+}
+
+.burgerMenu:hover .dropdown {
+    display: block;
+}
+
+
+@media (max-width:1360px) {
+    .content{
+        margin: 0 35px;
+    }
+}
+@media (max-width:760px) {
+    .content{
+        margin: 0 10px;
+    }
+}

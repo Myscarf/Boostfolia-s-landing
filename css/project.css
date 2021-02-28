@@ -1,0 +1,106 @@
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    border: solid 1px tomato;
+}
+
+
+
+:root{
+--textcolor: rgb(244, 81, 30); /*Использовал только в Header.css*/
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    cursor: url(../img/cursor_PNG6.png), default;
+    position: relative;
+    min-width: 460px;
+    user-select: none;
+    scroll-behavior: smooth; 
+}
+
+a{
+    cursor: url(../img/cursor_PNG7.png), default;
+    text-decoration: none;
+    color: inherit;
+}
+
+h2{
+    display: block;
+    font-size: 1em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+}
+
+.navar{
+    position: fixed;
+    height: 32px;
+    width: 32px;
+    user-select: none;
+    z-index: 100000;
+}
+
+#navartop{
+    right: 20px;
+    bottom: 20px;
+}
+#navardown{
+    left: 20px;
+    bottom: 20px;
+}
+
+
+
+@font-face {
+    src: url(../fonts/BigNoodleTitling.ttf);
+    font-family: "BigNoodleTitling";
+}
+@font-face {
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-family: "Roboto-Bold";
+}
+@font-face {
+    src: url(../fonts/Roboto-Light.ttf);
+    font-family: "Roboto-Light";
+}
+@font-face {
+    src: url(../fonts/Roboto-Thin.ttf);
+    font-family: "Roboto-Thin";
+}
+@font-face {
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+    font-family: "RobotoCondensed";
+}
+@font-face {
+    src: url(../fonts/MgOpenModataRegular.ttf);
+    font-family: "MgOpenModata";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

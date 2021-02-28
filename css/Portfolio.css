@@ -1,0 +1,139 @@
+/*Portfolio*/
+.Portfolio{
+    margin: auto;
+    max-width: 1366px;
+    
+    width: 100%;
+    position: relative;
+}
+.Portfolio_top{
+    height: 314px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.Topic{
+    padding-top: 77px; 
+}
+
+.TopicName{
+    font-family: "BigNoodleTitling";
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.TopicText{
+    font-family: "Roboto-Thin";
+    font-size: 14px;
+    color: #919191;
+    text-align: center;  
+    margin-top: 25px;        
+}
+
+.Topic__line{
+    margin: 5px auto 0;
+    height: 3px;
+    width: 153px;
+    background-color: #f4511e;
+}
+
+.nav{
+    width: 620px;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 310px);
+}
+
+.navItem{
+    display: inline-block;
+    width: 120px;    
+}
+
+@media (max-width:720px){
+    .Portfolio_top{
+        height: 464px;
+    }
+    .nav{
+        width: 120px;
+        left: calc(50% - 60px);
+    }
+} 
+
+.navItem__link{
+    margin: auto;
+    width: 100px;
+    font-family: "Roboto-Light";
+    font-size: 13.68px;
+    position: relative;
+    text-align: center;
+}
+.navItem__line{
+    margin: 10px auto 20px;
+    height: 3px;
+    width: 112px;
+    background-color: #f4511e;
+    opacity: 0;
+    transition: 0.3s;
+}
+.navItem__link:hover{
+    font-family: "Roboto-Bold";
+}
+.navItem__link:hover ~ .navItem__line{
+    opacity: 1;
+}
+
+
+.Portfolio_bottom{
+    background-color: black;
+    width: 100%;
+    height: 524px;
+    overflow: hidden;
+}
+
+.work{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    height: 33.333333%;
+    background-color: violet;
+    opacity: 0.9;
+}
+
+.work:hover{
+    opacity: 1;
+    box-shadow: 10px 10px 50px 10px coral;
+}
+
+@media (max-width:960px) {
+    .Portfolio_bottom{
+        height: 833.33px;
+    }
+    .work{
+        width: 33.3333%;
+        height: 20%;
+    }
+}
+@media (max-width:720px) {
+    
+    .work{
+        width: 50%;
+        height: 25%;
+    }
+}
+
+.work:nth-child(n) {
+    background-image: url(../img/1.png);
+    background-size: cover;
+}
+.work:nth-child(2n) {
+    background-image: url(../img/flat.jpg);
+    background-size: cover;
+}
+.work:nth-child(4n) {
+    background-image: url(../img/coffee.jpg);
+    background-size: cover;
+}
+.work:nth-child(6n) {
+    background-image: url(../img/lamp.jpg);
+    background-size: cover;
+}

@@ -1,0 +1,164 @@
+/*Slider*/
+
+.Slider{
+    position: relative;
+    margin: auto;
+    background-color: #353535;
+    height: 708px;
+    width: 100%;
+    max-width: 1366px;
+    overflow: hidden;
+}
+
+.Slider__box{
+    position: relative;
+    height: 100%;
+    width: 200%;
+    animation: 5s slid linear alternate infinite;
+}
+
+.blackCover{
+    position: absolute;
+    top: 0;
+    background-color: black;
+    z-index: 5;
+    height: 708px;
+    width: 100%;
+    background-color: black;
+    opacity: 75%;
+}
+.bg1, .bg2{
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+}
+
+.bg1{
+    background-image: url(../img/paris.jpg);
+}
+.bg2{
+    background-image: url(../img/flat.jpg);
+}
+
+@keyframes slid {
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: translate(0);
+    }
+    80%{
+        transform: translate(-50%);
+    }
+    100%{
+        transform: translate(-50%);
+    }
+}
+
+.Slider_content{
+    padding-top: 303px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.Slider_text{
+    position: relative;
+    font-family: "BigNoodleTitling";
+    font-size: 72px;
+    color: #d6d5d5;
+    text-align: center;
+    letter-spacing: 10px;
+    z-index: 10;
+}
+
+
+.Slider_text-lower{
+    position: relative;
+    font-family: "BigNoodleTitling";
+    font-size: 36px;
+    color: #d6d5d5;
+    text-align: center;
+    letter-spacing: 5px;
+    z-index: 10;
+}
+
+.mouse{
+    position: absolute;
+    bottom: 45px;
+    left: calc(50% - 57.26px);
+    z-index: 10;
+}
+.mouse__img{
+    display: block;
+    margin: 0 auto 5px;
+}
+.mouse_text{
+    text-align: center;
+    color: #ffffff;
+    
+}
+
+.arrows {
+    position: absolute;
+    top: 300px;
+    color: white;
+    z-index: 10;
+}
+#left_arrow{
+    left: 50px;
+}
+#right_arrow{
+    right: 50px;
+}
+
+@media (max-width:1360px){
+    .Slider_content{
+        left: 150px;
+    }
+}
+
+@media (max-width:1200px){
+    #left_arrow{
+        left: 0px;
+    }
+    #right_arrow{
+        right: 0px;
+    }
+    .Slider_content{
+        left: 50px;
+    } 
+}
+
+@media (max-width:960px){
+    .Slider_text{
+        font-size: 36px;
+    }
+    .Slider_text-lower{
+        font-size: 24px;
+    }
+}
+
+@media (max-width:560px){
+    .Slider_text{
+        font-size: 24px;
+    }
+    .Slider_text-lower{
+        font-size: 24px;
+    }
+    .Slider_content{
+        left: 10px;
+    }
+}
+
+@media (max-width:750px){
+    #left_arrow{
+        left: -20px;
+    }
+    #right_arrow{
+        right: -20px;
+    }
+}

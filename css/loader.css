@@ -1,0 +1,45 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+}
+
+.Load{
+    padding-top:  319px
+}
+
+.Loadtext{
+    font-family: "BigNoodleTitling";
+    font-size: 72px;
+    color: #d6d5d5;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.Loadtext-lower{
+    font-family: "BigNoodleTitling";
+    font-size: 36px;
+    color: #d6d5d5;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+
+
+svg{
+    display: block;
+    margin: auto;
+    height: 405px;
+    width:200px;
+}
+#bull{
+    stroke-linecap:round;
+    animation: 5s ani1 linear alternate infinite;
+}
+@keyframes ani1{
+    to{
+        stroke-dashoffset:0;
+    }
+}
+
