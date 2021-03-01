@@ -1,13 +1,14 @@
 /*Slider*/
 
 .Slider{
-    position: relative;
+    
     margin: auto;
     background-color: #353535;
     height: 708px;
     width: 100%;
     max-width: 1366px;
-    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .Slider__box{
@@ -18,14 +19,16 @@
 }
 
 .blackCover{
+    max-width: 1366px;
     position: absolute;
-    top: 0;
-    background-color: black;
+    top: 143px;
+    
     z-index: 5;
-    height: 708px;
+    height: 693px;
     width: 100%;
     background-color: black;
     opacity: 75%;
+    
 }
 .bg1, .bg2{
     display: inline-block;
@@ -41,7 +44,7 @@
 .bg2{
     background-image: url(../img/flat.jpg);
 }
-
+/*
 @keyframes slid {
     0%{
         transform: translate(0);
@@ -56,13 +59,10 @@
         transform: translate(-50%);
     }
 }
-
+*/
 .Slider_content{
     padding-top: 303px;
     box-sizing: border-box;
-    position: absolute;
-    top: 0px;
-    left: 20px;
 }
 
 .Slider_text{

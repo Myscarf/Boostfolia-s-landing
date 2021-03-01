@@ -11,6 +11,7 @@
 .post{
     width: 320px;
     background-color: #ebebeb;
+    position: relative;
 }
 
 .posts{
@@ -42,18 +43,18 @@
 }
 
 .post_top{
-    position: relative;
+    
     height: 218px;
     width: 100%;
     background-color: turquoise;
 }
 
 .link{
-    
+    left: calc( 45% - 52px );
     border-radius: 50%;
     padding: 10px;
     background-color: rgb(244, 81, 30);
-    left: 100px;
+    left: calc( 45% - 52px );
     z-index: 10;
 }
 
@@ -62,21 +63,44 @@
     border-radius: 50%;
     padding: 10px;
     background-color: white;
-    left: 180px;
+    left: calc(55%);
     z-index: 10;
 }
-/*
-#link1, #link2, #link3, #look1, #look2, #look3{
-    display: none;
-}
-*/
+
 .link, .look{
     display: none;
     position: absolute;
     top: 20%;
-    display: block;
-
+    
 }
+
+.look:hover, .link:hover{
+    display: block;
+}
+/*
+
+#link2 {
+    left: calc( 45% - 52px );
+}
+
+#look2 {
+    left: calc(55%);
+}
+
+#link3 {
+    left: calc( 45% - 52px );
+}
+
+#look3 {
+    left: calc(55%);
+}
+
+
+
+*/
+
+
+
 
 .pe-7s-link{
     color: white;
@@ -111,24 +135,6 @@
 }
 
 
-/*
-
-#pst2:hover ~ #link2 , #link2:hover, #pst2:hover ~ #look2, #look2:hover{
-    display: inline-block;
-    left: 520px;
-}
-#pst2:hover ~ #link2{
-    left: 440px;
-}
-
-#pst3:hover ~ #link3, #pst3:hover ~ #look3{
-    display: inline-block;
-    left: 850px;
-}
-#pst3:hover ~ #link3{
-    left: 780px;
-}
-*/
 @media (max-width:1361px){
     #pst1:hover ~ #link1{
         left: 15%;
